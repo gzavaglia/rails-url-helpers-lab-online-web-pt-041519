@@ -16,7 +16,7 @@ class StudentsController < ApplicationController
       @student.active = true
     end
     @student.save
-    redirect_to student_path(@student.to_s)
+    redirect_to student_path(@student)
     end
     
   private
